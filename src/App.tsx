@@ -485,23 +485,23 @@ function App() {
       <section id="problem-03" className="section-shell section-alt">
         <header className="section-header">
           <span className="pill">Problem 03 · Conversion RCA</span>
-          <h2>Search → Basket Conversion Drop · How I Diagnosed It</h2>
+          <h2>Search → Basket Conversion Drop · How I Would Diagnose It</h2>
           <p className="section-sub">
-            A material conversion regression appeared in Sydney over the last month. Below is the path I took -
-            sanity-check the signal, walk the funnel to find <em>where</em> it broke, build a MECE tree for
-            <em> why</em> it broke, then validate, fix, and codify what I learned.
+            If a material conversion regression appeared in Sydney, this is the path I would take - sanity-check
+            the signal, walk the funnel to find <em>where</em> it is breaking, build a MECE tree for
+            <em> why</em> it may be breaking, then validate, fix, and codify the learnings.
           </p>
         </header>
 
         {/* Sanity check - narrative */}
         <div className="rca-block">
-          <p className="rca-step-tag">First, I sanity-checked the signal</p>
+          <p className="rca-step-tag">First, I would sanity-check the signal</p>
           <p className="rca-narrative">
-            Before I touched a single product hypothesis, I sat down with Data &amp; Engineering. Conversion
-            metrics drift for instrumentation reasons more often than people admit, and I didn't want the team
-            chasing a phantom. I confirmed the metric definition hadn't changed, the event pipelines were fresh,
-            no schema migration coincided with the start date, and no recent deployment or feature-flag rollout
-            sat suspiciously on the curve.
+            Before touching a single product hypothesis, I would sit down with Data &amp; Engineering.
+            Conversion metrics drift for instrumentation reasons more often than people admit, and I would not
+            want the team chasing a phantom. I would confirm the metric definition has not changed, the event
+            pipelines are fresh, no schema migration coincides with the start date, and no recent deployment or
+            feature-flag rollout sits suspiciously on the curve.
           </p>
           <p className="rca-metrics-note">
             <strong>Metrics I inspected:</strong> event volume vs. prior month, schema diffs across search /
@@ -511,11 +511,11 @@ function App() {
 
         {/* Funnel - narrative */}
         <div className="rca-block">
-          <p className="rca-step-tag">Then I walked the funnel to localize the leak</p>
+          <p className="rca-step-tag">Then I would walk the funnel to localize the leak</p>
           <p className="rca-narrative">
-            With the signal validated, I walked the conversion path one stage at a time. Search → Basket isn't a
-            single number - it's a chain of transition rates. The rate that actually moved tells me where to focus
-            the root-cause work; the rates that held tell me where I don't need to look.
+            With the signal validated, I would walk the conversion path one stage at a time. Search → Basket is
+            not a single number - it is a chain of transition rates. The rate that actually moved would tell me
+            where to focus the root-cause work; the rates that held would tell me where I do not need to look.
           </p>
         </div>
 
@@ -573,13 +573,13 @@ function App() {
 
         {/* MECE Tree - narrative */}
         <div className="rca-block">
-          <p className="rca-step-tag">With the leak narrowed, I built the cause tree</p>
+          <p className="rca-step-tag">With the leak narrowed, I would build the cause tree</p>
           <p className="rca-narrative">
-            Once the funnel pointed me at one transition, I mapped possible causes into a tree that splits cleanly
-            into three buckets - things <em>we</em> changed that hurt the funnel (Internal), things in the
+            Once the funnel points me at one transition, I would map possible causes into a tree that splits
+            cleanly into three buckets - things <em>we</em> changed that hurt the funnel (Internal), things in the
             <em> market</em> that shifted (External), and the one I always force the team to check explicitly:
-            <em> cannibalization</em>, where a new internal path we shipped quietly absorbs the conversion.
-            A live example here: if we launched an <strong>AI-powered voice agent</strong> that creates a brand-new
+            <em> cannibalization</em>, where a new internal path we ship quietly absorbs the conversion.
+            A live example here: if we launch an <strong>AI-powered voice agent</strong> that creates a brand-new
             add-to-cart journey, the search → basket rate can look broken even though total ATC is healthy. The
             "drop" is users converting on a different surface - the metric needs to follow the user, not the path.
           </p>
@@ -652,11 +652,11 @@ function App() {
 
         {/* Investigation Experiments */}
         <div className="rca-block">
-          <p className="rca-step-tag">Then I designed experiments to settle the surviving branches</p>
+          <p className="rca-step-tag">Then I would design experiments to settle the surviving branches</p>
           <p className="rca-narrative">
-            A hypothesis tree without experiments is just a wishlist. For each surviving branch I scoped a
+            A hypothesis tree without experiments is just a wishlist. For each surviving branch I would scope a
             specific experiment with a single primary metric and a pre-committed decision rule, so the team
-            wouldn't relitigate the call after the data came back.
+            does not relitigate the call after the data comes back.
           </p>
         </div>
 
@@ -748,13 +748,13 @@ function App() {
 
         {/* Validate, fix, codify */}
         <div className="rca-block">
-          <p className="rca-step-tag">Then I shipped the fix and codified what I learned</p>
+          <p className="rca-step-tag">Then I would ship the fix and codify what I learned</p>
           <p className="rca-narrative">
-            With experiments resolved and a leading hypothesis confirmed, I shipped the targeted fix and watched
-            the transition rate recover against the baseline. After recovery, I wrote up the diagnosis as a
-            conversion-incident playbook and wired the leading indicators (zero-result rate, p95 latency, PDP
-            bounce, ATC error rate, share of ATC by surface) into an alerting dashboard so the next regression
-            - including the next cannibalization - gets caught while it's still small.
+            With experiments resolved and a leading hypothesis confirmed, I would ship the targeted fix and watch
+            the transition rate recover against the baseline. After recovery, I would write up the diagnosis as a
+            conversion-incident playbook and wire the leading indicators (zero-result rate, p95 latency, PDP
+            bounce, ATC error rate, share of ATC by surface) into an alerting dashboard so the next regression -
+            including the next cannibalization - gets caught while it is still small.
           </p>
         </div>
       </section>
