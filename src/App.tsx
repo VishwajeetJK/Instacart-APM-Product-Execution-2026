@@ -31,7 +31,7 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Sydney Launch — Execution Playbook
+          Sydney Launch - Execution Playbook
         </motion.h1>
         <p className="hero-sub">
           Three connected problem statements: sizing the addressable market down to 400 priority postcodes, selecting
@@ -60,7 +60,7 @@ function App() {
       <section id="problem-01" className="section-shell section-alt">
         <header className="section-header">
           <span className="pill">Problem 01 · Market Sizing</span>
-          <h2>Sydney Postcode Selection — 700 → 400</h2>
+          <h2>Sydney Postcode Selection - 700 → 400</h2>
           <p className="section-sub">
             Identify the 400 highest-value postcodes within the 700 in Greater Sydney to prioritize Instacart launch
             coverage, capacity planning, and shopper supply.
@@ -81,7 +81,7 @@ function App() {
           <article className="card">
             <h3 className="card-title">Mission &amp; Business Goals</h3>
             <p className="card-body">
-              Bring every household requirement to users at the click of a button — accessible and easy.
+              Bring every household requirement to users at the click of a button - accessible and easy.
             </p>
             <ul className="card-list">
               <li>Preserve Instacart's value proposition for users, shoppers, and retailers</li>
@@ -97,7 +97,7 @@ function App() {
               ready transportation to a store.
             </p>
             <ul className="card-list">
-              <li>Competitors: Amazon, Walmart, Coles — established logistics &amp; delivery operators</li>
+              <li>Competitors: Amazon, Walmart, Coles - established logistics &amp; delivery operators</li>
               <li>Differentiator: shopper network + retailer breadth + speed</li>
             </ul>
           </article>
@@ -190,7 +190,7 @@ function App() {
             <p className="component-defn">Median household income at the postcode level (ABS Census).</p>
             <p className="component-direction">↑ Higher is better</p>
             <p className="component-why">
-              <strong>Why it leads the model:</strong> our actual-case target is the 300 high-income postcodes —
+              <strong>Why it leads the model:</strong> our actual-case target is the 300 high-income postcodes -
               they have the largest baskets, the highest convenience-fee tolerance, and the best 90-day retention
               in every Instacart geography to date.
             </p>
@@ -206,7 +206,7 @@ function App() {
             <p className="component-direction">↑ Higher is better</p>
             <p className="component-why">
               <strong>Why it matters:</strong> dense postcodes cut shopper drive-time between drops and unlock
-              batched deliveries — the single biggest lever on our cost-per-order economics in Year 1.
+              batched deliveries - the single biggest lever on our cost-per-order economics in Year 1.
             </p>
           </article>
 
@@ -234,7 +234,7 @@ function App() {
             <p className="component-defn">Average one-way journey-to-work time (ABS journey-to-work).</p>
             <p className="component-direction">↑ Higher is better</p>
             <p className="component-why">
-              <strong>Why it's a proxy:</strong> matches our target persona — busy people juggling work, study,
+              <strong>Why it's a proxy:</strong> matches our target persona - busy people juggling work, study,
               and family. Long commutes mean less time to shop, which is exactly the willingness-to-pay we want.
             </p>
           </article>
@@ -244,7 +244,7 @@ function App() {
           <p className="rationale-tag">Weight Rationale</p>
           <p className="rationale-body">
             Income carries 35% because it's the strongest historical predictor of basket size and retention.
-            Density and inverted-transport split 25% / 20% because both drive delivery economics and demand —
+            Density and inverted-transport split 25% / 20% because both drive delivery economics and demand -
             density is slightly higher because it directly compounds with shopper utilization. Commute time gets
             20% as the persona proxy. These are <strong>starting priors</strong>; after the pilot we re-fit
             weights against observed Sydney conversion, retention, and contribution-margin data.
@@ -300,7 +300,7 @@ function App() {
 
         <header className="section-header subsection-header">
           <span className="pill pill-soft">Hard Gates</span>
-          <h3 className="subsection-title">Knockout criteria — all must be true</h3>
+          <h3 className="subsection-title">Knockout criteria - all must be true</h3>
         </header>
         <div className="gate-row">
           <span className="gate-chip">In Greater Sydney</span>
@@ -316,12 +316,12 @@ function App() {
           <article className="decision-card decision-yes">
             <p className="decision-tag">YES · Tier 1</p>
             <p className="decision-headline">S ≥ 0.65</p>
-            <p className="decision-body">Launch wave 1 — ~300 highest-priority postcodes (high-income clusters).</p>
+            <p className="decision-body">Launch wave 1 - ~300 highest-priority postcodes (high-income clusters).</p>
           </article>
           <article className="decision-card decision-watch">
             <p className="decision-tag">YES · Tier 2</p>
             <p className="decision-headline">0.50 ≤ S &lt; 0.65</p>
-            <p className="decision-body">Launch wave 2 — additional ~100 postcodes added once wave 1 is stable.</p>
+            <p className="decision-body">Launch wave 2 - additional ~100 postcodes added once wave 1 is stable.</p>
           </article>
           <article className="decision-card decision-no">
             <p className="decision-tag">NO · Defer</p>
@@ -337,7 +337,7 @@ function App() {
           <span className="pill">Problem 02 · Retailer Pilot</span>
           <h2>20 → 5 Retailers for Pilot Selection</h2>
           <p className="section-sub">
-            BD has shortlisted 20 retailers for the Sydney pilot. The goal isn't just to pick the five "biggest" —
+            BD has shortlisted 20 retailers for the Sydney pilot. The goal isn't just to pick the five "biggest" -
             it's to pick the five whose existing distribution we can amplify, contribute meaningfully to their growth,
             and convert into case studies that strengthen our negotiating position with the next wave of retailers.
           </p>
@@ -352,34 +352,34 @@ function App() {
           <div className="strategy-step">
             <p className="strategy-num">01</p>
             <p className="strategy-title">Pick retailers with existing distribution</p>
-            <p className="strategy-body">Strong store footprint &amp; supply chain — they already know how to move units; we don't carry the operational lift on Day 1.</p>
+            <p className="strategy-body">Strong store footprint &amp; supply chain - they already know how to move units; we don't carry the operational lift on Day 1.</p>
           </div>
           <span className="strategy-arrow" aria-hidden="true">→</span>
           <div className="strategy-step">
             <p className="strategy-num">02</p>
             <p className="strategy-title">Scale their reach &amp; contribute to growth</p>
-            <p className="strategy-body">We unlock incremental demand outside their current online channel — they grow faster than they would alone.</p>
+            <p className="strategy-body">We unlock incremental demand outside their current online channel - they grow faster than they would alone.</p>
           </div>
           <span className="strategy-arrow" aria-hidden="true">→</span>
           <div className="strategy-step">
             <p className="strategy-num">03</p>
             <p className="strategy-title">Convert wins into case studies</p>
-            <p className="strategy-body">Document GMV lift, new-customer share, and basket economics — turn them into BD ammunition.</p>
+            <p className="strategy-body">Document GMV lift, new-customer share, and basket economics - turn them into BD ammunition.</p>
           </div>
           <span className="strategy-arrow" aria-hidden="true">→</span>
           <div className="strategy-step">
             <p className="strategy-num">04</p>
             <p className="strategy-title">Negotiate better terms with future retailers</p>
-            <p className="strategy-body">By the time we approach the next 20, we have proof points and operational maturity — better economics, faster integrations.</p>
+            <p className="strategy-body">By the time we approach the next 20, we have proof points and operational maturity - better economics, faster integrations.</p>
           </div>
         </div>
 
-        {/* Existing performance metrics — reframed as post-launch tracking */}
+        {/* Existing performance metrics - reframed as post-launch tracking */}
         <header className="section-header subsection-header">
           <span className="pill pill-soft">Post-Launch Tracking</span>
           <h3 className="subsection-title">How we measure the five once they're live</h3>
           <p className="section-sub">
-            One north star, three success metrics, three guardrails, three health metrics — every metric carries a
+            One north star, three success metrics, three guardrails, three health metrics - every metric carries a
             target and a clear reason it's tracked.
           </p>
         </header>
@@ -388,7 +388,7 @@ function App() {
             <p className="metric-tag">North Star</p>
             <p className="metric-headline">Successful deliveries per store per day</p>
             <p className="metric-body">
-              A single composite of demand × fulfillment quality × capacity — the truest signal that the retailer is
+              A single composite of demand × fulfillment quality × capacity - the truest signal that the retailer is
               moving incremental units through Instacart at scale.
             </p>
             <div className="sub-metrics">
@@ -436,7 +436,7 @@ function App() {
                 <span className="sub-metric-num">1</span>
                 <p className="sub-metric-name">Substitution Rate</p>
                 <p className="sub-metric-target">Target: ≤ 12%</p>
-                <p className="sub-metric-why">Items swapped at picking due to OOS — high values erode trust fast.</p>
+                <p className="sub-metric-why">Items swapped at picking due to OOS - high values erode trust fast.</p>
               </div>
               <div className="sub-metric">
                 <span className="sub-metric-num">2</span>
@@ -448,7 +448,7 @@ function App() {
                 <span className="sub-metric-num">3</span>
                 <p className="sub-metric-name">Shopper In-Store Wait Time</p>
                 <p className="sub-metric-target">Target: ≤ 8 min (median)</p>
-                <p className="sub-metric-why">Keeps store-floor friction low — protects retailer relationship.</p>
+                <p className="sub-metric-why">Keeps store-floor friction low - protects retailer relationship.</p>
               </div>
             </div>
           </article>
@@ -487,13 +487,13 @@ function App() {
           <span className="pill">Problem 03 · Conversion RCA</span>
           <h2>Search → Basket Conversion Drop · How I Diagnosed It</h2>
           <p className="section-sub">
-            A material conversion regression appeared in Sydney over the last month. Below is the path I took —
+            A material conversion regression appeared in Sydney over the last month. Below is the path I took -
             sanity-check the signal, walk the funnel to find <em>where</em> it broke, build a MECE tree for
             <em> why</em> it broke, then validate, fix, and codify what I learned.
           </p>
         </header>
 
-        {/* Sanity check — narrative */}
+        {/* Sanity check - narrative */}
         <div className="rca-block">
           <p className="rca-step-tag">First, I sanity-checked the signal</p>
           <p className="rca-narrative">
@@ -509,12 +509,12 @@ function App() {
           </p>
         </div>
 
-        {/* Funnel — narrative */}
+        {/* Funnel - narrative */}
         <div className="rca-block">
           <p className="rca-step-tag">Then I walked the funnel to localize the leak</p>
           <p className="rca-narrative">
             With the signal validated, I walked the conversion path one stage at a time. Search → Basket isn't a
-            single number — it's a chain of transition rates. The rate that actually moved tells me where to focus
+            single number - it's a chain of transition rates. The rate that actually moved tells me where to focus
             the root-cause work; the rates that held tell me where I don't need to look.
           </p>
         </div>
@@ -571,17 +571,17 @@ function App() {
           </div>
         </div>
 
-        {/* MECE Tree — narrative */}
+        {/* MECE Tree - narrative */}
         <div className="rca-block">
           <p className="rca-step-tag">With the leak narrowed, I built the cause tree</p>
           <p className="rca-narrative">
             Once the funnel pointed me at one transition, I mapped possible causes into a tree that splits cleanly
-            into three buckets — things <em>we</em> changed that hurt the funnel (Internal), things in the
+            into three buckets - things <em>we</em> changed that hurt the funnel (Internal), things in the
             <em> market</em> that shifted (External), and the one I always force the team to check explicitly:
             <em> cannibalization</em>, where a new internal path we shipped quietly absorbs the conversion.
             A live example here: if we launched an <strong>AI-powered voice agent</strong> that creates a brand-new
             add-to-cart journey, the search → basket rate can look broken even though total ATC is healthy. The
-            "drop" is users converting on a different surface — the metric needs to follow the user, not the path.
+            "drop" is users converting on a different surface - the metric needs to follow the user, not the path.
           </p>
         </div>
 
@@ -636,7 +636,7 @@ function App() {
           </div>
           <div className="mece-leaves mece-leaves-cannibalize">
             <article className="leaf-card leaf-card-accent">
-              <p className="leaf-title">AI Voice Agent — net-new ATC journey</p>
+              <p className="leaf-title">AI Voice Agent - net-new ATC journey</p>
               <p className="leaf-metrics">voice-agent ATC volume · share of total ATC by surface · voice adoption curve · total ATC vs baseline · search-session → voice-ATC stitch rate</p>
             </article>
             <article className="leaf-card">
@@ -671,7 +671,7 @@ function App() {
               <p className="experiment-row"><span>Hypothesis</span> A share of the missing search → ATC volume is converting via the AI voice agent.</p>
               <p className="experiment-row"><span>Treatment</span> No traffic change. Session-level join of search sessions ↔ voice-agent ATC events; reattribute baskets to the originating discovery surface.</p>
               <p className="experiment-row"><span>Primary metric</span> % of post-launch ATC originating from voice agent; total ATC across all surfaces vs baseline.</p>
-              <p className="experiment-row"><span>Decision</span> If total ATC is flat-or-up while search → ATC is down, redefine the NSM to "ATC across all paths" — stop treating this as a regression.</p>
+              <p className="experiment-row"><span>Decision</span> If total ATC is flat-or-up while search → ATC is down, redefine the NSM to "ATC across all paths" - stop treating this as a regression.</p>
             </div>
           </article>
 
@@ -754,7 +754,7 @@ function App() {
             the transition rate recover against the baseline. After recovery, I wrote up the diagnosis as a
             conversion-incident playbook and wired the leading indicators (zero-result rate, p95 latency, PDP
             bounce, ATC error rate, share of ATC by surface) into an alerting dashboard so the next regression
-            — including the next cannibalization — gets caught while it's still small.
+            - including the next cannibalization - gets caught while it's still small.
           </p>
         </div>
       </section>
@@ -765,7 +765,7 @@ function App() {
           <span className="pill">Summary</span>
           <h2>Putting it together</h2>
           <p className="section-sub">
-            Three problem statements, one operating principle — frame the question rigorously, score the
+            Three problem statements, one operating principle - frame the question rigorously, score the
             options with explicit and inspectable weights, and design experiments to settle whatever
             ambiguity remains.
           </p>
@@ -777,15 +777,15 @@ function App() {
             <p className="summary-title">From 700 postcodes to a 400-postcode launch footprint</p>
             <ul className="summary-list">
               <li>
-                <strong>Approach —</strong> hard gates (Greater Sydney, ops reachability, density floor),
+                <strong>Approach -</strong> hard gates (Greater Sydney, ops reachability, density floor),
                 then a weighted score <em>S = 0.35·I + 0.25·D + 0.20·(1−T) + 0.20·C</em>, then tiered cutoffs.
               </li>
               <li>
-                <strong>Output —</strong> ~300 high-priority postcodes for wave 1, ~100 for wave 2, the rest
+                <strong>Output -</strong> ~300 high-priority postcodes for wave 1, ~100 for wave 2, the rest
                 deferred for future expansion.
               </li>
               <li>
-                <strong>Key takeaway —</strong> income leads the model because the actual-case target is
+                <strong>Key takeaway -</strong> income leads the model because the actual-case target is
                 the 300 high-income postcodes; weights are starting priors, re-fit against pilot data.
               </li>
             </ul>
@@ -796,16 +796,16 @@ function App() {
             <p className="summary-title">Five partners selected for amplifiable distribution + room to grow</p>
             <ul className="summary-list">
               <li>
-                <strong>Approach —</strong> existing distribution → we scale their reach &amp; contribute
+                <strong>Approach -</strong> existing distribution → we scale their reach &amp; contribute
                 to growth → wins become case studies → better terms with future retailers.
               </li>
               <li>
-                <strong>Output —</strong> a post-launch scorecard with one north star, three success
+                <strong>Output -</strong> a post-launch scorecard with one north star, three success
                 metrics, three guardrails, and three health metrics, each with an explicit target.
               </li>
               <li>
-                <strong>Key takeaway —</strong> the pilot is BD ammunition for the next 20, not just a
-                launch list — pick partners we can grow alongside.
+                <strong>Key takeaway -</strong> the pilot is BD ammunition for the next 20, not just a
+                launch list - pick partners we can grow alongside.
               </li>
             </ul>
           </article>
@@ -815,17 +815,17 @@ function App() {
             <p className="summary-title">Diagnostic playbook for a search → basket regression</p>
             <ul className="summary-list">
               <li>
-                <strong>Approach —</strong> sanity-check the signal → walk the funnel to localize the leak
+                <strong>Approach -</strong> sanity-check the signal → walk the funnel to localize the leak
                 → MECE tree across <em>Internal · External · Cannibalization</em> → six experiments, each
                 with hypothesis · treatment · primary metric · decision rule.
               </li>
               <li>
-                <strong>Output —</strong> targeted fix shipped, leading-indicator dashboard wired
+                <strong>Output -</strong> targeted fix shipped, leading-indicator dashboard wired
                 (zero-result rate, p95 latency, PDP bounce, ATC error rate, share of ATC by surface),
                 conversion-incident playbook documented.
               </li>
               <li>
-                <strong>Key takeaway —</strong> when a new path ships (e.g., an AI voice agent that
+                <strong>Key takeaway -</strong> when a new path ships (e.g., an AI voice agent that
                 creates a brand-new ATC journey), the metric needs to follow the user, not the original
                 path.
               </li>
@@ -837,7 +837,7 @@ function App() {
           <p className="summary-principle-tag">Operating Principle</p>
           <p className="summary-principle-body">
             Across all three problems the same playbook holds: <strong>structure the question, score with
-            transparent weights, and use experiments to remove the rest of the ambiguity</strong> — the
+            transparent weights, and use experiments to remove the rest of the ambiguity</strong> - the
             way launch decisions, partner selection, and incident response stay defensible at the speed
             a new market launch demands.
           </p>
